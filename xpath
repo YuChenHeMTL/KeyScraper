@@ -1,0 +1,13 @@
+-- IC page
+
+entry title = //td[@class='subject windowbg2']/div/span/a/text()
+entry link = //td[@class='subject windowbg2']/div/span/a/@href
+
+locked entry = //td[@class='subject lockedbg2']
+
+entry stats = //td[@class='stats windowbg']/text()
+
+entry last post link = //td[@class='lastpost windowbg2']/a/@href
+entry last post date = //td[@class='lastpost windowbg2']/text()
+
+number of entries = //a[@class='navPages']/text() -> get biggest number
